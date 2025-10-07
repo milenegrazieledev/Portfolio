@@ -1,4 +1,3 @@
-// Efeito de brilho suave ao passar o mouse nos cards
 const cards = document.querySelectorAll('.skill-card');
 
 cards.forEach(card => {
@@ -10,3 +9,4 @@ cards.forEach(card => {
     card.style.boxShadow = '0 0 20px #8c00ff20';
   });
 });
+
