@@ -1,8 +1,6 @@
 
-/* ===== RESET ===== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ===== VARS ===== */
 :root{
   --bg:#0a0a0f;
   --neon1:#8c00ff;
@@ -12,7 +10,6 @@
   --card-bg: rgba(255,255,255,0.04);
 }
 
-/* ===== BODY ===== */
 body {
   font-family: 'Poppins', sans-serif;
   background: radial-gradient(circle at top, #07060a, #000);
@@ -22,7 +19,6 @@ body {
   flex-direction: column;
 }
 
-/* ===== HEADER ===== */
 header {
   text-align: center;
   padding: 50px 20px 30px;
@@ -58,7 +54,6 @@ nav a {
 nav a:hover {
   background: rgba(140,0,255,0.12);
 }
-/* ===== GRID ===== */
 .contact-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -68,7 +63,6 @@ nav a:hover {
   padding: 0 20px;
 }
 
-/* ===== CARDS ===== */
 .contact-card {
   background: var(--card-bg);
   border: 1px solid rgba(140,0,255,0.18);
@@ -77,20 +71,16 @@ nav a:hover {
   box-shadow: 0 6px 30px rgba(72,0,120,0.08);
 }
 
-/* Info card */
 .info-card h2, .form-card h2 { color: #b983ff; margin-bottom: 12px; }
 .muted { color: var(--muted); font-size: 0.95rem; margin-bottom: 12px; }
 
-/* linhas de info */
 .info-line { display: flex; gap: 12px; align-items: center; margin: 10px 0; }
 .icon { width: 22px; height: 22px; color: #b983ff; flex-shrink: 0; }
 
-/* links */
 .info-line a, .socials a { color: var(--text); text-decoration: none; font-weight: 600; }
 .socials { display: flex; gap: 10px; margin-top: 12px; }
 .social { padding: 6px 10px; border-radius: 8px; background: linear-gradient(90deg, rgba(74,0,224,0.15), rgba(140,0,255,0.15)); }
 
-/* ===== FORM ===== */
 label { display:block; margin-top: 10px; color: var(--muted); font-size: 0.95rem; }
 input[type="text"], input[type="email"], textarea {
   width:100%;
@@ -107,7 +97,6 @@ input:focus, textarea:focus {
   box-shadow: 0 0 12px rgba(140,0,255,0.18);
 }
 
-/* ACTIONS */
 .form-actions { display:flex; gap:10px; margin-top: 14px; }
 .btn-primary {
   background: linear-gradient(90deg, var(--neon2), var(--neon1));
@@ -127,13 +116,11 @@ input:focus, textarea:focus {
   cursor:pointer;
 }
 
-/* feedback */
 .feedback { margin-top:10px; color: #c6f7d9; min-height: 1.1rem; }
 
-/* FOOTER */
 footer { text-align:center; padding:18px 0; color: #9f95c9; border-top:1px solid rgba(140,0,255,0.08); }
 
-/* ===== RESPONSIVO ===== */
 @media (max-width: 900px){
   .contact-grid { grid-template-columns: 1fr; padding: 0 14px; margin: 20px auto; }
 }
+
