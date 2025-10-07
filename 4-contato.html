@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Milene Graziele</title>
+    <link rel="stylesheet" href="8-contato.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contatos</h1>
+        <nav>
+            <ul>
+                <li><a href="1-index.html">Início</a></li>
+                <li><a href="2-sobre.html">Sobre</a></li>
+                <li><a href="3-projetos.html">Projetos</a></li>
+                <li><a href="4-contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-grid">
+
+            <!-- CARD: Informações rápidas -->
+            <div class="contact-card info-card">
+                <h2>Fale comigo</h2>
+
+                <p class="muted">Escolha o canal que preferir — respondo rápido pelo WhatsApp!</p>
+
+                <!-- PHONE -->
+                <div class="info-line">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M6.6 10.2a15.05 15.05 0 006.2 6.2l1.9-1.9a1 1 0 011.0-.24c1.1.4 2.4.6 3.7.6a1 1 0 011 1v3.5a1 1 0 01-1 1C8.5 20.5 3.5 15.5 3.5 9a1 1 0 011-1h3.5a1 1 0 011 1c0 1.3.2 2.6.6 3.7.15.35.04.77-.24 1.05l-1.9 1.9z" />
+                    </svg>
+                    <a href="tel:+55199993876342" id="phone-link">+55 (19) 99939-8763</a>
+                </div>
+
+                <!-- WHATSAPP -->
+                <div class="info-line">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M20.5 3.5A11.9 11.9 0 0012 .5C6.2.5 1.6 4.9 1.2 10.5c-.2 2.1.5 4.2 2.1 5.9L1 22l5.9-2.1c1.6 1 3.5 1.5 5.4 1.5 5.9 0 10.6-4.7 10.6-10.6 0-3-1.2-5.8-3.9-7.8zM12 20c-1.7 0-3.4-.5-4.9-1.4l-.4-.3-3.5 1.2 1.2-3.4-.3-.4A8.3 8.3 0 013.7 10C3.7 6.1 7.1 2.7 11 2.7c4 0 7.4 3.4 7.4 7.4S15 17.5 11 17.5z" />
+                    </svg>
+                    <a href="https://wa.me/55199993876342?text=Ol%C3%A1%20Milene%21%20Estou%20entrando%20em%20contato%20pelo%20seu%20site."
+                        id="whatsapp-link" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+                </div>
+
+                <!-- REDES -->
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/milenegraziele" target="_blank" rel="noopener"
+                        class="social">LinkedIn</a>
+                    <a href="https://github.com/milenegrazieledev" target="_blank" rel="noopener"
+                        class="social">GitHub</a>
+                    <!-- substitua/adicione outras redes se quiser -->
+                </div>
+            </div>
+
+            <!-- CARD: Formulário de contato -->
+            <div class="contact-card form-card">
+                <h2>Enviar mensagem</h2>
+                <form id="contact-form" novalidate>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required />
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@exemplo.com" required />
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..."
+                        required></textarea>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Enviar</button>
+                        <button type="button" id="clear-btn" class="btn-ghost">Limpar</button>
+                    </div>
+
+                    <p id="form-feedback" class="feedback" aria-live="polite"></p>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Milene Graziele</p>
+    </footer>
+
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>
