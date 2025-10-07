@@ -72,13 +72,10 @@ main {
   margin: 0 auto;
 }
 
-/* ===== VARIÁVEIS ===== */
 :root {
   --card-height: 280px;
-  /* ajuste aqui para aumentar/diminuir a altura dos cards */
 }
 
-/* ===== GRID 4x4 ===== */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -91,16 +88,13 @@ main {
 
 }
 
-/* ===== CARD DO PROJETO ===== */
 .projeto-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* empurra o link pro final do card */
   align-items: stretch;
   width: 100%;
 
-  /* aparência */
   background: rgb(255, 255, 255);
   border: 1px solid rgba(140, 0, 255, 0.3);
   border-radius: 30px;
@@ -166,6 +160,6 @@ main {
 
   :root {
     --card-height: 220px;
-    /* cards menores no mobile */
   }
 }
+
